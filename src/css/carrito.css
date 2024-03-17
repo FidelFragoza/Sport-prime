@@ -1,0 +1,123 @@
+.cabecera {
+
+    align-items: center;
+    /* Centrar verticalmente los elementos */
+
+    padding: 5px 20px;
+    /* Añadir espacio interno */
+    background-color: var(--fondo);
+    /* Color de fondo */
+    color: var(--white);
+    text-shadow: 1px 1px 1px black;
+
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+}
+
+
+#volver {
+    max-height: 50px;
+    padding: 1px 15px 0px 3px;
+    cursor: pointer;
+}
+
+.producto-carrito {
+    display: flex;
+    align-items: center;
+    margin: 0px 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    
+}
+
+.producto-carrito img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+    padding: 10px 10px;
+}
+
+.producto-info {
+    flex-grow: 1;
+    /* El contenido ocupa todo el espacio disponible */
+}
+
+.producto-info p {
+    margin: 0;
+    text-wrap: balance;
+}
+
+.producto-carrito select {
+    margin-left: 10px;
+}
+
+.eliminar-producto {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* 
+.total {
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px var(--white);
+    width: 100%;
+    background-color: var(--fondo);
+   padding: 5px 20px;
+   position: fixed;
+   z-index: 999;
+} */
+
+.total {
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+
+body {
+    margin-bottom: 100px; /* Añade un margen en la parte inferior del cuerpo para evitar que el div "total" cubra contenido */
+}
+
+.total p {
+    margin: 5px 0;
+}
+
+.total span {
+    font-weight: bold;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.total .subtotal {
+    font-size: 1.2em;
+}
+
+.total .iva {
+    font-size: 1em;
+}
+
+.total .total {
+    font-size: 1.5em;
+    color: #333;
+}
+

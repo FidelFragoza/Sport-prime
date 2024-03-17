@@ -1,0 +1,31 @@
+[
+    {
+      "id": 1,
+      "name": "Pesa Rusa",
+      "description": "Pesa rusa de hierro fundido con asa ancha para entrenamientos de fuerza y acondicionamiento.",
+      "price": 600,
+      "image": "../img/productos/pesa_rusa.png"
+    },
+    {
+      "id": 2,
+      "name": "Banda de Resistencia",
+      "description": "Banda elástica de resistencia para entrenamiento de fuerza y estiramiento.",
+      "price": 250,
+      "image": "../img/productos/banda_resistencia.png"
+    },
+    {
+      "id": 3,
+      "name": "Mancuernas",
+      "description": "Par de mancuernas 25 libras.",
+      "price": 1200,
+      "image": "../img/productos/mancuernas.png"
+    },
+    {
+      "id": 4,
+      "name": "Bule de Agua",
+      "description": "Bule de agua de acero inoxidable con capacidad de 500 mililitros, ideal para mantenerse hidratado durante el entrenamiento.",
+      "price": 300,
+      "image": "../img/productos/bule de agua.png"
+    }
+  ]
+  

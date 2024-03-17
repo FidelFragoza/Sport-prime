@@ -1,0 +1,30 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--white);
+    text-align: center;
+    font-size: 14px;
+}
+
+
+section {
+    color: var(--black);
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h2, h3, h4 {
+    letter-spacing: 0.3rem;
+}
+
+h1, h3 {
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+
+

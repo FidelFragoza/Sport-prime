@@ -1,0 +1,73 @@
+nav {
+    display: grid;
+    grid-template-columns: 1fr auto; /* Una columna que se expande y una columna para el carrito */
+    gap: 2%;
+
+    justify-content: space-between; /* Alinear los elementos a los extremos del nav */
+    align-items: center; /* Centrar verticalmente los elementos */
+    
+    padding: 10px 20px; /* Añadir espacio interno */
+    background-color: var(--fondo); /* Color de fondo */
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#buscador {
+    display: flex;
+    align-items: center;
+    background-color: var(--white);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#buscador input {
+    border: none;
+    outline: none;
+    background-color: var(--white);
+    padding: 5px;
+    margin-left: 5px;
+    width: 100%; /* El input toma todo el espacio disponible */
+
+    font-size: 1.5rem;
+}
+
+.boton {
+    width: auto; /* Ancho automático para el ícono */
+    height: 25px; /* Altura automática para el ícono */
+    cursor: pointer;
+}
+
+#carrito {
+    background-color: #ffcc00;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 30px; /* Añadir un margen al lado derecho */
+}
+
+/* Estilos para pantallas grandes */
+@media (max-width: 1000px) {
+    nav {
+        padding: 15px 30px;
+    }
+
+    .boton {
+        height: 55px;
+    }
+
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 500px) {
+    nav {
+        padding: 10px 20px;
+    }
+
+    .boton {
+        height: 40px;
+    }
+
+}
+

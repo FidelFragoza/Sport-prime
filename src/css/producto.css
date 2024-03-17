@@ -1,0 +1,53 @@
+.productos {
+    margin-top: 80px; /* Margen superior igual a la altura del navbar */
+}
+
+/* Resto de estilos para los productos */
+.producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.producto img {
+    max-width: 75%;
+    height: auto;
+    margin-bottom: 10px;
+    border: 1px solid var(--gray);
+    border-radius: 10px;
+}
+
+.producto h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.producto p {
+    margin-bottom: 5px;
+}
+
+.producto .precio {
+    font-weight: bold;
+}
+
+/* Estilos para pantallas grandes */
+@media (max-width: 1000px) {
+    .productos {
+        margin-top: 105px; /* Margen superior igual a la altura del navbar */
+    }
+
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 500px) {
+    .productos {
+        margin-top: 85px; /* Margen superior igual a la altura del navbar */
+    }
+}
+
