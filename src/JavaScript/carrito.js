@@ -1,7 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     const carritoContainer = document.getElementById('carrito-container');
-    const totalSinIvaElement = document.getElementById('total-sin-iva');
-    const totalConIvaElement = document.getElementById('total-con-iva');
+    const subtotalElement = document.getElementById('subtotal');
+    const ivaElement = document.getElementById('iva');
+    const totalElement = document.getElementById('total');
+
 
     let productosSeleccionados = JSON.parse(localStorage.getItem('productosSeleccionados')) || [];
 
@@ -63,14 +65,18 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function calcularTotales() {
-        const totalSinIva = productosSeleccionados.reduce((total, producto) => total + (producto.precio * producto.cantidad), 0);
-        const totalConIva = totalSinIva * 1.16; // Suponiendo un IVA del 16%
+        const subtotal = productosSeleccionados.reduce((total, producto) => total + (producto.precio * producto.cantidad), 0);
+        const iva = subtotal * 0.16;
+        const total = subtotal * 1.16; // Suponiendo un IVA del 16%
 
-        if (totalSinIvaElement) {
-            totalSinIvaElement.textContent = `$${totalSinIva.toFixed(2)}`;
+        if (subtotalElement) {
+            subtotalElement.textContent = `$${subtotal.toFixed(2)}`;
         }
-        if (totalConIvaElement) {
-            totalConIvaElement.textContent = `$${totalConIva.toFixed(2)}`;
+        if (ivaElement) {
+            ivaElement.textContent = `$${iva.toFixed(2)}`;
+        }
+        if (totalElement) {
+            totalElement.textContent = `$${total.toFixed(2)}`;
         }
     }
 

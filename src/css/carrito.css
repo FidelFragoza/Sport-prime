@@ -87,7 +87,8 @@
     left: 0;
     width: 100%;
     background-color: #f9f9f9;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     border-top: 1px solid #ccc;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
     z-index: 999;
@@ -98,26 +99,18 @@ body {
     margin-bottom: 100px; /* Añade un margen en la parte inferior del cuerpo para evitar que el div "total" cubra contenido */
 }
 
-.total p {
-    margin: 5px 0;
-}
 
-.total span {
-    font-weight: bold;
-    margin-left: 10px;
-    margin-bottom: 10px;
-}
 
-.total .subtotal {
-    font-size: 1.2em;
-}
-
-.total .iva {
-    font-size: 1em;
-}
-
-.total .total {
-    font-size: 1.5em;
-    color: #333;
-}
+.total table {
+    width: 100%; /* Ancho de la tabla */
+    border-collapse: collapse; /* Eliminar bordes entre celdas */
+  }
+  
+  .total th,
+  .total td {
+    text-align: center; /* Centrar el contenido horizontalmente */
+    vertical-align: middle; /* Centrar el contenido verticalmente */
+    padding: 10px; /* Añadir espacio entre el contenido y los bordes */
+  }
+  
 

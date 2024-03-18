@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/carrito.css">
 </head>
+
 <body>
     <div class="cabecera">
         <img src="../img/botones/left_9138530.png" id="volver" alt="boton para volver al inicio">
@@ -17,9 +19,35 @@
         <!-- Aquí se mostrarán los productos agregados al carrito -->
     </div>
     <div class="total">
-        <p>Total sin IVA: <span id="total-sin-iva">$0.00</span></p>
-        <p>Total con IVA: <span id="total-con-iva">$0.00</span></p>
+        <table>
+            <tr>
+                <th>
+                    <p>Subtotal</p>
+                </th>
+                <th>
+                    <p>IVA</p>
+                </th>
+                <th>
+                    <p>Total</p>
+                </th>
+            </tr>
+
+            <tr>
+                <th>
+                    <span id="subtotal">$0.00</span>
+                </th>
+                <th>
+                    <span id="iva">$0.00</span>
+                </th>
+                <th>
+                    <span id="total">$0.00</span>
+                </th>
+            </tr>
+
+        </table>
+
     </div>
     <script src="../JavaScript/carrito.js"></script>
 </body>
+
 </html>
